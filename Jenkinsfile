@@ -5,8 +5,11 @@ pipeline {
         stage('Build') {
 
             agent{
+                docker{
                 image 'node:18-alphine'
                 reuseNode true
+                }
+
             }
             steps {
                 sh '''
