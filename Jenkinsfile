@@ -19,7 +19,7 @@ pipeline {
                 npm ci
                 npm run build
                 ls -la
-                test -f bild/index.html
+                test -f build/index.html
                 '''
             }
         }
